@@ -58,6 +58,9 @@
         "packageRules": [
           {
             "matchUpdateTypes": [
+              "patch",
+              "pin",
+              "minor"
             ],
             "automerge": true
           },
