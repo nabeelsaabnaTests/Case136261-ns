@@ -1,3 +1,3 @@
-FROM debian:buster
+FROM debian:bookworm
 
 WORKDIR /app
