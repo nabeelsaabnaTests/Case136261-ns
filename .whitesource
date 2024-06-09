@@ -33,55 +33,10 @@
       "enabled": true
     },
     "enableRenovate": true,
-    "timezone": "America/Denver",
+    
         "extends": [
           ":dependencyDashboard",
-          ":approveMajorUpdates",
-          ":semanticPrefixFixDepsChoreOthers",
-          ":prConcurrentLimit10",
-          ":prHourlyLimitNone",
-          ":automergeTypes",
-          "group:monorepos",
-          "group:recommended",
-          "workarounds:all",
-          ":semanticCommits",
           "github>whitesource/merge-confidence:beta"
-        ],
-        "ignorePaths": [
-          "**/node_modules/**",
-          "**/bower_components/**",
-          "**/vendor/**",
-          "**/examples/**",
-          "**/__fixtures__/**"
-        ],
-        "transitiveRemediation": true,
-        "packageRules": [
-          {
-            "matchUpdateTypes": [
-              "patch",
-              "pin",
-              "minor"
-            ],
-            "automerge": true
-          },
-          {
-            "matchDepTypes": [
-              "devDependencies"
-            ],
-            "automerge": true
-          },
-          {
-            "matchManagers": [
-              "npm"
-            ],
-            "rangeStrategy": "auto"
-          },
-          {
-            "matchConfidence": [
-              "low"
-            ],
-            "dependencyDashboardApproval": true
-          }
         ]
   }
 }
