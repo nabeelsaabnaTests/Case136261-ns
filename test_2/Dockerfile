@@ -1,3 +1,3 @@
-FROM debian:buster-20240311
+FROM python:3.11-slim-bullseye
 
-RUN echo hello
+WORKDIR /app
