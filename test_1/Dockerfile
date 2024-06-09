@@ -1,3 +1,3 @@
-FROM debian:buster-slim
+FROM debian:buster
 
 WORKDIR /app
